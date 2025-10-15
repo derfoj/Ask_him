@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-neutral-800 bg-neutral-50;
+}
+
+a {
+  @apply text-primary hover:text-primary-dark;
+}
