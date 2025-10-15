@@ -31,6 +31,7 @@ export default function DeckCard({ deck, onStudy, onEdit, onStats, onDelete }) {
           <Play size={16} className="inline mr-1" /> Étudier
         </button>
         <button
+          onClick={onEdit}
           className="px-3 py-1.5 text-sm font-medium bg-neutral-100 text-neutral-700 rounded-lg hover:bg-neutral-200 transition"
         >
           <Edit2 size={16} className="inline mr-1" /> Éditer

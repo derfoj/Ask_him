@@ -26,4 +26,14 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  // New configuration for test files
+  {
+    files: ['src/**/*.test.jsx'], // Target test files
+    languageOptions: {
+      globals: {
+        ...globals.jest, // Add Jest globals
+        ...globals.browser, // Keep browser globals if needed for tests
+      },
+    },
+  },
 ])
