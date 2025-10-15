@@ -1,16 +1,57 @@
-# React + Vite
+# Flashcards Anki-Like
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur Ask_him, une application moderne et élégante pour créer, gérer et étudier vos propres jeux de cartes flash. Inspirée par les principes d'apprentissage espacé d'Anki, cette application vous aide à maîtriser de nouvelles informations de manière efficace et agréable.
 
-Currently, two official plugins are available:
+## ✨ Fonctionnalités Clés
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Création et Gestion de Decks :** Organisez vos cartes en decks personnalisés.
+- **Éditeur de Cartes Intuitif :** Ajoutez, modifiez et supprimez facilement des cartes avec des questions et réponses.
+- **Sessions d'Étude Intelligentes :** Profitez de sessions d'étude basées sur la répétition espacée pour optimiser votre apprentissage.
+- **Statistiques Détaillées :** Suivez vos progrès et identifiez les domaines à améliorer.
+- **Importation CSV :** Importez rapidement vos cartes existantes à partir de fichiers CSV.
+- **Interface Utilisateur Moderne :** Une expérience utilisateur fluide et visuellement agréable.
 
-## React Compiler
+## 🚀 Technologies Utilisées
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ce projet est construit avec des technologies web modernes pour offrir une performance et une maintenabilité optimales :
 
-## Expanding the ESLint configuration
+- **React :** Une bibliothèque JavaScript pour construire des interfaces utilisateur dynamiques.
+- **Vite :** Un outil de build rapide pour le développement frontend.
+- **Tailwind CSS :** Un framework CSS utilitaire pour un design rapide et personnalisable, avec une palette de couleurs sobre et professionnelle.
+- **Lucide React :** Une collection d'icônes légères et personnalisables.
+- **PapaParse :** Une bibliothèque robuste pour l'analyse CSV côté client.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 Design et Esthétique
+
+L'application arbore un design épuré et professionnel, avec une palette de couleurs soigneusement sélectionnée pour une expérience visuelle sobre et agréable. L'accent est mis sur la clarté et la facilité d'utilisation, garantissant que votre concentration reste sur l'apprentissage.
+
+## ⚙️ Installation et Lancement
+
+Pour faire fonctionner ce projet en local, suivez ces étapes :
+
+1.  **Clonez le dépôt :**
+    ```bash
+    git clone https://github.com/votre-utilisateur/Ask_him.git
+    cd flashcards-anki-like
+    ```
+
+2.  **Installez les dépendances :**
+    ```bash
+    npm install
+    ```
+
+3.  **Lancez l'application en mode développement :**
+    ```bash
+    npm run dev
+    ```
+    L'application sera accessible à l'adresse `http://localhost:5173` (ou un port similaire).
+
+4.  **Construire pour la production :**
+    ```bash
+    npm run build
+    ```
+    Ceci créera une version optimisée de l'application dans le dossier `dist/`.
+
+---
+
+Développé par NZsystems
