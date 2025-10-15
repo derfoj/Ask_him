@@ -1,6 +1,10 @@
 # Flashcards Anki-Like
 
+<<<<<<< HEAD
 Bienvenue sur Ask_him, une application moderne et élégante pour créer, gérer et étudier vos propres jeux de cartes flash. Inspirée par les principes d'apprentissage espacé d'Anki, cette application vous aide à maîtriser de nouvelles informations de manière efficace et agréable.
+=======
+Bienvenue sur Flashcards Anki-Like, une application moderne et élégante pour créer, gérer et étudier vos propres jeux de cartes flash. Inspirée par les principes d'apprentissage espacé d'Anki, cette application vous aide à maîtriser de nouvelles informations de manière efficace et agréable.
+>>>>>>> 9fe3a5807631b96234b196c0bb91d2ec277d63d6
 
 ## ✨ Fonctionnalités Clés
 
@@ -31,7 +35,11 @@ Pour faire fonctionner ce projet en local, suivez ces étapes :
 
 1.  **Clonez le dépôt :**
     ```bash
+<<<<<<< HEAD
     git clone https://github.com/votre-utilisateur/Ask_him.git
+=======
+    git clone https://github.com/votre-utilisateur/flashcards-anki-like.git
+>>>>>>> 9fe3a5807631b96234b196c0bb91d2ec277d63d6
     cd flashcards-anki-like
     ```
 
@@ -54,4 +62,8 @@ Pour faire fonctionner ce projet en local, suivez ces étapes :
 
 ---
 
+<<<<<<< HEAD
 Développé par NZsystems
+=======
+Développé par NZsystems
+>>>>>>> 9fe3a5807631b96234b196c0bb91d2ec277d63d6
