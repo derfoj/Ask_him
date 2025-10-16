@@ -1,15 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #1f2937;
-  background-color: #f9fafb;
+  @apply font-sans text-neutral-800 bg-neutral-50;
 }
 
 a {
-  color: #2563eb;
-}
-
-a:hover {
-  color: #1e40af;
+  @apply text-primary hover:text-primary-dark;
 }
