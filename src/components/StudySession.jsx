@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
-import { parseMarkdown } from "../utils/markdown";
 
 export default function StudySession({ deck, onEnd }) {
   const [index, setIndex] = useState(0);
@@ -8,6 +7,7 @@ export default function StudySession({ deck, onEnd }) {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
+    // Charger uniquement les cartes à étudier
     const due = deck.cards.filter(c => new Date(c.nextReview) <= new Date());
     setCards(due);
   }, [deck]);
@@ -74,10 +74,9 @@ export default function StudySession({ deck, onEnd }) {
           className="border border-gray-200 rounded-lg p-6 cursor-pointer hover:shadow-md transition"
           onClick={() => setShowBack(!showBack)}
         >
-          <div
-            className="text-xl text-gray-800"
-            dangerouslySetInnerHTML={{ __html: parseMarkdown(showBack ? current.back : current.front) }}
-          />
+          <p className="text-xl text-gray-800">
+            {showBack ? current.back : current.front}
+          </p>
         </div>
       </div>
 
