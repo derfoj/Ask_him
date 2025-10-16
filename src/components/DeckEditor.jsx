@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CardEditor from "./CardEditor";
 import CSVImporter from "./CSVImporter";
 import { ArrowLeft, Trash2, Upload } from "lucide-react";
+import { parseMarkdown } from "../utils/markdown";
 
 export default function DeckEditor({ deck, onSave, onBack }) {
   const [cards, setCards] = useState(deck.cards);
@@ -82,11 +83,17 @@ export default function DeckEditor({ deck, onSave, onBack }) {
             <ul className="space-y-2">
               {cards.map(card => (
                 <li key={card.id} className="flex justify-between items-center border border-neutral-200 p-2 rounded-lg">
-                  <div>
-                    <p className="font-medium">{card.front}</p>
-                    <p className="text-neutral-500 text-sm">{card.back}</p>
+                  <div className="flex-1 overflow-hidden">
+                    <div
+                      className="font-medium truncate"
+                      dangerouslySetInnerHTML={{ __html: parseMarkdown(card.front) }}
+                    />
+                    <div
+                      className="text-neutral-500 text-sm truncate"
+                      dangerouslySetInnerHTML={{ __html: parseMarkdown(card.back) }}
+                    />
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 ml-2 flex-shrink-0">
                     <button
                       onClick={() => setEditingCard(card)}
                       className="text-primary hover:underline text-sm"
